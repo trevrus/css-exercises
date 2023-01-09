@@ -25,3 +25,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* My solution */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header>ul,
+.footer>ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header li,
+.footer li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.content {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px 16px;
+}
