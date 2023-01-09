@@ -23,6 +23,70 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+/* My solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+li>a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 32px;
+  padding-left: 16px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  flex: 0 0 200px;
+  /* margin: 16px; */
+  /* flex-wrap: wrap; */
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+
 }
